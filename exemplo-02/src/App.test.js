@@ -10,13 +10,4 @@ describe('App', () => {
     ReactDOM.render(<App />, div);
     ReactDOM.unmountComponentAtNode(div);
   });
-
-  describe('render', () => {
-    it('Verificando o que vai renderizar', () => {
-      const component = shallow(<App />);
-      const expected = <div className="display">0</div>;
-
-      expect(component.contains(expected)).toEqual(true);
-    })
-  })
 })
