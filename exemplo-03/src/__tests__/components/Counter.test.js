@@ -15,21 +15,23 @@ describe('render', () => {
 
 describe('event', () => {
   it('Incrementando', () => {
-    const component = shallow(<Counter initial={0} />);
-    const resultHtml = '<div class="display">1</div>';
+    const component = shallow(<Counter initial={2} />);
+
+    expect(component.state().counter).toEqual(2);
 
     component.find('.buttonUp').simulate('click');
 
-    expect(component.find('.display').html()).toEqual(resultHtml);
+    expect(component.state().counter).toEqual(3);
   });
 
   it('Decrementando', () => {
-    const component = shallow(<Counter initial={0} />);
-    const resultHtml = '<div class="display">-1</div>';
+    const component = shallow(<Counter initial={2} />);
+
+    expect(component.state().counter).toEqual(2);
 
     component.find('.buttonDown').simulate('click');
 
-    expect(component.find('.display').html()).toEqual(resultHtml);
+    expect(component.state().counter).toEqual(1);
   });
 });
 
