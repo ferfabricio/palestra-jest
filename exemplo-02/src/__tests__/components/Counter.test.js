@@ -7,8 +7,20 @@ import { shallow } from 'enzyme';
 describe('render', () => {
   it('Verificando o que vai renderizar', () => {
     const component = shallow(<Counter initial={0} />);
-    const expected = <div className="display">0</div>;
+    const resultHtml = '<div class="display">0</div>';
 
-    expect(component.contains(expected)).toEqual(true);
-  })
-})
+    expect(component.find('.display').html()).toEqual(resultHtml);
+  });
+});
+
+describe('event', () => {
+  it('Incrementando', () => {
+    const component = shallow(<Counter initial={0} />);
+    const resultHtml = '<div class="display">1</div>';
+
+    component.find('.buttonUp').simulate('click');
+
+    expect(component.find('.display').html()).toEqual(resultHtml);
+  });
+});
+

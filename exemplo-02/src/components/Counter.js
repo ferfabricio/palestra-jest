@@ -32,9 +32,9 @@ class Counter extends Component {
 
     return (
       <div className="counter">
-        <button onClick={this.handleDecrement}>-1</button>
+        <button className="buttonDown" onClick={this.handleDecrement}>-1</button>
         <div className="display">{counter}</div>
-        <button onClick={this.handleIncrement}>+1</button>
+        <button className="buttonUp" onClick={this.handleIncrement}>+1</button>
       </div>
     )
   }
