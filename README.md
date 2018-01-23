@@ -47,3 +47,8 @@ Utilizando o `npm`:
 ```
 npm test -- --coverage
 ```
+
+## Referências
+- [Site do Jest - https://facebook.github.io/jest/](https://facebook.github.io/jest/)
+- [Airbnb Enzyme (shallow reference) - http://airbnb.io/enzyme/docs/api/shallow.html](http://airbnb.io/enzyme/docs/api/shallow.html)
+- [Artigo do auth0](https://auth0.com/blog/testing-react-applications-with-jest/)
