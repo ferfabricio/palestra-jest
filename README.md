@@ -66,13 +66,13 @@ Para tal adicione a propriedade `jest` no `package.json`. O parâmetro que defin
 
 Exemplo de coverage utilizando essa configuração no projeto do exemplo-03:
 
-![Exemplo de coverage][https://github.com/ferfabricio/palestra-jest/blob/master/screen.png?raw=true]
+![Exemplo de coverage](https://github.com/ferfabricio/palestra-jest/blob/master/screen.png?raw=true "Resultado do coverage")
 
 O resultado dos testes também são gerados na pasta `coverage/` dentro do projeto o qual foi executado o teste.
 
 Na pasta `coverage/lcov-report/` ficam os arquivos html com o resultado do coverage.
 
-![Exemplo de coverage html][https://github.com/ferfabricio/palestra-jest/blob/master/screen2.png?raw=true]
+![Exemplo de coverage html](https://github.com/ferfabricio/palestra-jest/blob/master/screen2.png?raw=true "Resultado HTML")
 
 Um das curiosidades é que os coverages são gerados com a biblioteca `istanbul`.
 
