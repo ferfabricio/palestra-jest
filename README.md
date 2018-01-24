@@ -51,17 +51,30 @@ npm test -- --coverage
 ### Arquivos analisados pelo code coverage
 
 Existe a possibilidade de configurar quais pastas ou arquivos que serão analisados pelo code coverage padrão.
+
 Para tal adicione a propriedade `jest` no `package.json`. O parâmetro que define a whitelist é `collectCoverageFrom` como no exemplo a seguir:
 
 ```
-"jest": {
-  "collectCoverageFrom": [
-    "src/**/*.{js,jsx}",
-    "src/App.js",
-    "!src/*.js"
-  ]
-}
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}",
+      "!src/*.js",
+      "src/App.js"
+    ]
+  }
 ```
+
+Exemplo de coverage utilizando essa configuração no projeto do exemplo-03:
+
+![Exemplo de coverage][https://github.com/ferfabricio/palestra-jest/blob/master/screen.png?raw=true]
+
+O resultado dos testes também são gerados na pasta `coverage/` dentro do projeto o qual foi executado o teste.
+
+Na pasta `coverage/lcov-report/` ficam os arquivos html com o resultado do coverage.
+
+![Exemplo de coverage html][https://github.com/ferfabricio/palestra-jest/blob/master/screen2.png?raw=true]
+
+Um das curiosidades é que os coverages são gerados com a biblioteca `istanbul`.
 
 ## Referências
 - [Site do Jest - https://facebook.github.io/jest/](https://facebook.github.io/jest/)
