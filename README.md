@@ -48,6 +48,21 @@ Utilizando o `npm`:
 npm test -- --coverage
 ```
 
+### Arquivos analisados pelo code coverage
+
+Existe a possibilidade de configurar quais pastas ou arquivos que serão analisados pelo code coverage padrão.
+Para tal adicione a propriedade `jest` no `package.json`. O parâmetro que define a whitelist é `collectCoverageFrom` como no exemplo a seguir:
+
+```
+"jest": {
+  "collectCoverageFrom": [
+    "src/**/*.{js,jsx}",
+    "src/App.js",
+    "!src/*.js"
+  ]
+}
+```
+
 ## Referências
 - [Site do Jest - https://facebook.github.io/jest/](https://facebook.github.io/jest/)
 - [Airbnb Enzyme (shallow reference) - http://airbnb.io/enzyme/docs/api/shallow.html](http://airbnb.io/enzyme/docs/api/shallow.html)
