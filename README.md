@@ -76,6 +76,10 @@ Na pasta `coverage/lcov-report/` ficam os arquivos html com o resultado do cover
 
 Um das curiosidades é que os coverages são gerados com a biblioteca `istanbul`.
 
+## Slides
+
+- [PDF dos slides](https://github.com/ferfabricio/palestra-jest/blob/master/JEST.pdf?raw=true)
+
 ## Referências
 - [Site do Jest - https://facebook.github.io/jest/](https://facebook.github.io/jest/)
 - [Airbnb Enzyme (shallow reference) - http://airbnb.io/enzyme/docs/api/shallow.html](http://airbnb.io/enzyme/docs/api/shallow.html)
